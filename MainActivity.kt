@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
           //  tip = tip
                 tip_result.text = "tip amount $tip"
         }
-        val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
-        tip_result.text =  "tip amount "+formattedTip as String
+        //val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
+        //tip_result.text =  "tip amount "+formattedTip as String
     }
 }
