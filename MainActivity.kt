@@ -30,9 +30,10 @@ class MainActivity : AppCompatActivity() {
         var tip = tipPercentage * cost1
         if (round_up_switch.isChecked) {
             tip = kotlin.math.ceil(tip)
+            tip_result.text = "tip amount $tip1"
         }else{
           //  tip = tip
-
+                tip_result.text = "tip amount $tip"
         }
         val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
         tip_result.text =  "tip amount "+formattedTip as String
